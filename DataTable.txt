@@ -1,0 +1,13 @@
+DataTables CDN
+---------------------------------------------------
+https://cdn.datatables.net/#KeyTable
+
+
+---------Insert into template- Base.html
+ 
+<!-- Data Table - for CSS- Into Header-->
+         <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+   
+<!-- Data Table for Jquery- Into Body-->
+        <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+

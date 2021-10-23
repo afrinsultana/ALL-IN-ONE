@@ -1,0 +1,24 @@
+py -m pip install --upgrade pip
+py -m pip --version
+
+1. pip install virtualenv
+2. virtualenv mypython
+3  .\mypthon\Scripts\activate
+where python
+deactivate
+
+4 py -m pip install jupyter
+pip install jupyter
+pip install notebook
+pip install jupyterlab
+
+5. jupyter notebook
+
+py -m pip install --upgrade notebook
+py -m pip install -r requirements.txt
+
+6 py -m pip freeze
+pip show
+pip list
+
+

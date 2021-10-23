@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!-- child : >
+        nav>ul>li
+        -->
+        <nav>
+            <ul>
+                <li>Python with Django</li>
+
+            </ul>
+        </nav>
+        <!-- 
+            sibling:+
+            div+p+bq
+         -->
+         <div>This is a div</div>
+         <p>This is a paragraph</p>
+         <blockquote></blockquote>
+         <!-- 
+             climb-up:^
+             div+div>span+em^bq
+          -->
+          <div></div>
+          <div><span></span><em></em></div>
+          <blockquote></blockquote>
+        <!--  
+            div+div>p>span+em^^bq
+           -->
+           <div></div>
+           <div>
+               <p><span></span><em></em></p>
+           </div>
+           <blockquote></blockquote>
+
+           <!-- 
+               Grouping:()
+               div >(header>ul>li*2>a)+footer>p
+            -->
+            <div>
+                <header>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </header>
+                <footer>
+                    <p></p>
+                </footer>
+            </div>
+            <!-- 
+                Multiplication:*
+                ul>li*5
+             -->
+             <ul>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+             </ul>
+             <!-- 
+                 item numbering:$
+                 ul>li.item$*5
+              -->
+              <ul>
+                  <li class="item1"></li>
+                  <li class="item2"></li>
+                  <li class="item3"></li>
+                  <li class="item4"></li>
+                  <li class="item5"></li>
+              </ul>
+              <!-- 
+                  Ul>li.item$@-*5
+               -->
+               <Ul>
+                   <li class="item5"></li>
+                   <li class="item4"></li>
+                   <li class="item3"></li>
+                   <li class="item2"></li>
+                   <li class="item1"></li>
+               </Ul>
+               <!-- 
+                  Ul>li.item$@*5
+               -->
+               <Ul>
+                   <li class="item1"></li>
+                   <li class="item2"></li>
+                   <li class="item3"></li>
+                   <li class="item4"></li>
+                   <li class="item5"></li>
+               </Ul>
+               <!-- 
+                   Ul>li.item$@3*5
+                -->
+                <Ul>
+                    <li class="item3"></li>
+                    <li class="item4"></li>
+                    <li class="item5"></li>
+                    <li class="item6"></li>
+                    <li class="item7"></li>
+                </Ul>
+                <!-- 
+                   Ul>li.item$$$*5
+                -->
+                <Ul>
+                    <li class="item001"></li>
+                    <li class="item002"></li>
+                    <li class="item003"></li>
+                    <li class="item004"></li>
+                    <li class="item005"></li>
+                </Ul>
+                <!-- 
+                    #Header
+                 -->
+                 <div id="Header"></div>
+                 <!-- 
+                     .title
+                  -->
+                  <div class="title"></div>
+                  <!-- 
+                      form#search.wide
+                   -->
+                   <form action="" id="search" class="wide"></form>
+                   <!-- 
+                       text:{}
+                       a{Click me}
+                    -->
+                    <a href="">Click me</a>
+                    <!-- 
+                        p>{click }+a{here}+{to continue}
+                     -->
+                     <p>click <a href="">here</a>to continue</p>
+
+
+
+    </div>
+</body>
+</html>

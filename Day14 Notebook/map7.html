@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6a1bd607b2bc4950bff3ea6ceff14d3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6a1bd607b2bc4950bff3ea6ceff14d3c" ></div>
+        
+</body>
+<script>    
+    
+            var map_6a1bd607b2bc4950bff3ea6ceff14d3c = L.map(
+                "map_6a1bd607b2bc4950bff3ea6ceff14d3c",
+                {
+                    center: [48.218871184761596, 11.624819877497147],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ba5bdf910d40457493a7b03113025e74 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6a1bd607b2bc4950bff3ea6ceff14d3c);
+        
+    
+            var marker_f12359680d0a4e0eb38b2c515b95fac1 = L.marker(
+                [48.218871184761596, 11.624819877497147],
+                {}
+            ).addTo(map_6a1bd607b2bc4950bff3ea6ceff14d3c);
+        
+    
+        var popup_e9c1d3c3a0e245e8ba5d7d4929f9356b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_568ce31b4b2148c8941fad982f46e245 = $(`<div id="html_568ce31b4b2148c8941fad982f46e245" style="width: 100.0%; height: 100.0%;"><stong>Allianz Arena</stong></div>`)[0];
+            popup_e9c1d3c3a0e245e8ba5d7d4929f9356b.setContent(html_568ce31b4b2148c8941fad982f46e245);
+        
+
+        marker_f12359680d0a4e0eb38b2c515b95fac1.bindPopup(popup_e9c1d3c3a0e245e8ba5d7d4929f9356b)
+        ;
+
+        
+    
+    
+            marker_f12359680d0a4e0eb38b2c515b95fac1.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd838fc47f724bdfaf95f43056d97156 = L.marker(
+                [48.218871184761596, 11.624819877497147],
+                {}
+            ).addTo(map_6a1bd607b2bc4950bff3ea6ceff14d3c);
+        
+    
+            var icon_727538daf19a4f6a934f6d489b61010f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd838fc47f724bdfaf95f43056d97156.setIcon(icon_727538daf19a4f6a934f6d489b61010f);
+        
+    
+        var popup_1238f299cd7342cd9e012e39704246b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f55f31446c154cabafdbda1e5ba3e55d = $(`<div id="html_f55f31446c154cabafdbda1e5ba3e55d" style="width: 100.0%; height: 100.0%;"><stong>Allianz Arena</stong></div>`)[0];
+            popup_1238f299cd7342cd9e012e39704246b8.setContent(html_f55f31446c154cabafdbda1e5ba3e55d);
+        
+
+        marker_bd838fc47f724bdfaf95f43056d97156.bindPopup(popup_1238f299cd7342cd9e012e39704246b8)
+        ;
+
+        
+    
+    
+            marker_bd838fc47f724bdfaf95f43056d97156.bindTooltip(
+                `<div>
+                     Click Here For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
